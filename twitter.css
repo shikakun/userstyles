@@ -1,0 +1,8 @@
+@-moz-document url-prefix("https://twitter.com/") {
+  .js-moments-tab,
+  .module.trends,
+  .module.wtf-module,
+  .tweet.promoted-tweet {
+    display: none;
+  }
+}
