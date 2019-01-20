@@ -1,8 +1,11 @@
 @-moz-document url-prefix("https://twitter.com/") {
-  .js-moments-tab,
   .module.trends,
   .module.wtf-module,
-  .tweet.promoted-tweet {
+  .moments,
+  .stream-item.has-profile-promoted-tweet,
+  .tweet.promoted-tweet,
+  .tweet[data-component-context='suggest_activity_tweet'],
+  .TweetImpressionsModule {
     display: none;
   }
 }
