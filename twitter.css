@@ -1,11 +1,12 @@
 @-moz-document url-prefix("https://twitter.com/") {
-  .module.trends,
-  .module.wtf-module,
-  .moments,
-  .stream-item.has-profile-promoted-tweet,
-  .tweet.promoted-tweet,
-  .tweet[data-component-context='suggest_activity_tweet'],
-  .TweetImpressionsModule {
+  /* Left Column */
+  [aria-label='Search and explore'],
+
+  /* Right Column */
+  [aria-label='Timeline: Trending now'],
+  [aria-label='Who to follow'],
+  [data-testid='sidebarColumn'] > div > div > div > div > div > div:nth-child(3),
+  [data-testid='sidebarColumn'] > div > div > div > div > div > div:nth-child(4) {
     display: none;
   }
 }
