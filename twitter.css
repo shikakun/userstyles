@@ -1,12 +1,27 @@
 @-moz-document url-prefix("https://twitter.com/") {
-  /* Left Column */
+  /* Left column */
   [aria-label='Search and explore'],
 
-  /* Right Column */
+  /* Right column */
+  [aria-label='Timeline: '],
   [aria-label='Timeline: Trending now'],
   [aria-label='Who to follow'],
   [data-testid='sidebarColumn'] > div > div > div > div > div > div:nth-child(3),
-  [data-testid='sidebarColumn'] > div > div > div > div > div > div:nth-child(4) {
-    display: none;
+  [data-testid='sidebarColumn'] > div > div > div > div > div > div:nth-child(4),
+
+  /* Promotion tweet */
+  .css-1dbjc4n.r-1ila09b.r-qklmqi.r-1adg3ll.r-1ny4l3l > [data-testid],
+  .css-1dbjc4n.r-1ila09b.r-qklmqi.r-1adg3ll.r-1ny4l3l > * > div[data-testid],
+  .css-1dbjc4n.r-1ila09b.r-qklmqi.r-1adg3ll.r-1ny4l3l > * > * > h2[role="heading"],
+
+  /* Who to follow, Topics to follow */
+  .css-1dbjc4n.r-1adg3ll.r-1ny4l3l > [data-testid],
+  .css-1dbjc4n.r-1adg3ll.r-1ny4l3l > [role="region"],
+  .css-1dbjc4n.r-1adg3ll.r-1ny4l3l > [role="link"],
+  .css-1dbjc4n.r-1adg3ll.r-1ny4l3l > * > [role="heading"],
+  .css-901oao.css-cens5h.r-111h2gw.r-37j5jr.r-n6v787.r-16dba41.r-1cwl3u0.r-bcqeeo.r-qvutc0,
+
+  .display-none-rule {
+    display: none !important;
   }
 }
