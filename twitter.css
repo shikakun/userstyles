@@ -1,6 +1,6 @@
 @-moz-document url-prefix("https://twitter.com/") {
   /* Left column */
-  [aria-label='Search and explore'],
+  [aria-label="Search and explore"],
 
   /* Right column */
   [aria-label="Timeline: "],
